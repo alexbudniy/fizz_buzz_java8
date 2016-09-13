@@ -67,7 +67,7 @@
                     <finalName>fizzbuzz-${project.version}</finalName>
                     <archive>
                         <manifest>
-                            <mainClass>com.equalexperts.fizzbuzz.FizzBuzzApp</mainClass>
+                            <mainClass>com.avb.fizzbuzz.FizzBuzzApp</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

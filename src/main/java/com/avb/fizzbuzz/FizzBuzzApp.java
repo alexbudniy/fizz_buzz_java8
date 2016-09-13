@@ -1,4 +1,4 @@
-package com.equalexperts.fizzbuzz;
+package com.avb.fizzbuzz;
 
 
 public class FizzBuzzApp {

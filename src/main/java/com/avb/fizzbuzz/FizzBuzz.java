@@ -1,4 +1,4 @@
-package com.equalexperts.fizzbuzz;
+package com.avb.fizzbuzz;
 
 import java.io.PrintStream;
 import java.util.Map;

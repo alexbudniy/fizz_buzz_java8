@@ -1,10 +1,11 @@
-package com.equalexperts.fizzbuzz;
+package com.avb.fizzbuzz;
 
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.Mockito;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
@@ -13,7 +14,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static com.equalexperts.fizzbuzz.FizzBuzz.*;
+import static com.avb.fizzbuzz.FizzBuzz.*;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Matchers.any;
@@ -110,7 +111,7 @@ public class FizzBuzzTest {
 	@Test
 	public void testProcessAndPrintPrintsCorrectValuesOneToTwenty() {
 
-		FizzBuzz fizzBuzzSpy = spy(FizzBuzz.class);
+		FizzBuzz fizzBuzzSpy = Mockito.spy(FizzBuzz.class);
 
 		ByteArrayOutputStream outSpy = new ByteArrayOutputStream();
 		fizzBuzzSpy.setOutput(new PrintStream(outSpy));
@@ -131,7 +132,7 @@ public class FizzBuzzTest {
 
 	@Test
 	public void testVerifyCalculatePrintsCorrectOutput() {
-		FizzBuzz fizzBuzzSpy = spy(FizzBuzz.class);
+		FizzBuzz fizzBuzzSpy = Mockito.spy(FizzBuzz.class);
 
 		ByteArrayOutputStream outSpy = new ByteArrayOutputStream();
 		fizzBuzzSpy.setOutput(new PrintStream(outSpy));
